@@ -13,4 +13,8 @@ public interface IDummyService
 	[OperationContract]
     [WebGet(ResponseFormat = WebMessageFormat.Json,UriTemplate = "/DoWork/{id}/{time}")]
 	string DoWork(string id, string time);
+
+    [OperationContract]
+    [WebInvoke(Method = "POST", UriTemplate = "/PostCheck/{id}", ResponseFormat = WebMessageFormat.Json)]
+    string PostCheck(string id);
 }

@@ -12,4 +12,9 @@ public class DummyService : IDummyService
 	{
         return "hello";
 	}
+
+    public string PostCheck(string id)
+    {
+        return "test";
+    }
 }
